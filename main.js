@@ -5,13 +5,13 @@ console.log('Gustavo Pergola ama Mádjan, Mádjan ama Gustavo Pergola')
 
 const robotron = document.querySelector("#robotron")
 
-robotron.addEventListener("click", () => { // arrow function, funcao de seta, funcao vazia
-    console.log("Cliquei no robo")
+robotron.addEventListener("click", (evento) => { // arrow function, funcao de seta, funcao vazia
+    console.log(evento)
 })
 
 // isso aqui é um bloco de código
 function dizOi(nome) {
-    console.log(nome)
+    console.log("oi " + nome)
     console.log("Gustavo lindo!!!")
     console.log("todo console funciona")
 }
