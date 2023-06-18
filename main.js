@@ -45,10 +45,22 @@ function manipulaDados(operacao, controle) {
         peca.value = parseInt(peca.value) +1
     }
 }
+ 
 
 
 
-function mudaCores(elementos) {
-    var cores = elementos.getAttibute("[cor]");
-    var tipoElemento = elementos.getAttibute("[tipo]");
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
