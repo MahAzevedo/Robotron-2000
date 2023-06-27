@@ -88,6 +88,9 @@ function atualizaEstatistica(peca) {
 }
 // botao de menos não está funcionando
 
+//..................
+
+
 
 
 
