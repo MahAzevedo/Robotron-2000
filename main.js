@@ -1,32 +1,3 @@
-//document.getElementById("#producao").innerHTML='Mad'
-//console.log('Gustavo Pergola ama Mádjan, Mádjan ama Gustavo Pergola')
-
-
-
-//const robotron = document.querySelector("#robotron")
-
-
-/*
-robotron.addEventListener("click", (evento) => { // arrow function, funcao de seta, funcao vazia
-    //console.log(evento)
-})
-
-// isso aqui é um bloco de código
-function dizOi(nome) {
-    console.log("oi " + nome)
-    console.log("Gustavo lindo!!!")
-}
-
-dizOi("Mad")  //para chamar a funcao assim que a pagina abre, é a primeira coisa que aparece
-*/
-
-
-
-
-
-
-
-
 const controle = document.querySelectorAll("[data-controle]")
 const estatistica = document.querySelectorAll("[data-estatistica]")
 console.log(estatistica)
@@ -92,7 +63,9 @@ function atualizaEstatistica(peca) {
 
 
 
-
+function trocaImagem(cor){
+    document.querySelector(".robo").src="img/Robotron 2000 - " + cor + ".png";
+ }
 
 
 
