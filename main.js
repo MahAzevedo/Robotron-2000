@@ -1,6 +1,5 @@
 const controle = document.querySelectorAll("[data-controle]")
 const estatistica = document.querySelectorAll("[data-estatistica]")
-console.log(estatistica)
 const pecas = {
     "bracos": {
         "forca": 29,
@@ -37,8 +36,8 @@ const pecas = {
 
 controle.forEach( (elemento) => {
     elemento.addEventListener("click", (evento) => {
-        manipulaDados(evento.target.dataset.controle, evento.target.parentNode)
-        atualizaEstatistica(evento.dataset.peca)
+        manipulaDados(evento.target.textContent, evento.target.parentNode)
+        atualizaEstatistica(evento.target.dataset.peca)
     })
     console.log(elemento)
 })
@@ -55,13 +54,10 @@ function manipulaDados(operacao, controle) {
 }
  
 function atualizaEstatistica(peca) {
-    console.log(peca)
+    estatistica.forEach( (elemento) => {
+        elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
+    })
 }
-// botao de menos não está funcionando
-
-//..................
-
-
 
 function trocaImagem(cor){
     document.querySelector(".robo").src="img/Robotron 2000 - " + cor + ".png";
